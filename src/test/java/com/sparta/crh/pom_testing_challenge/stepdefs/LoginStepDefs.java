@@ -15,9 +15,6 @@ import java.util.Map;
 
 public class LoginStepDefs extends StepDefsSuper{
 
-    LoginPage loginPage;
-    ProductsPage productsPage;
-
     @Given("I am on the login page")
     public void i_am_on_the_login_page(){
         webDriver.get(Config.getLoginURL());

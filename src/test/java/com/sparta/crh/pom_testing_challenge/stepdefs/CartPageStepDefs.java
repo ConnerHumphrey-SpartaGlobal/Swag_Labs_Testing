@@ -11,11 +11,6 @@ import org.junit.jupiter.api.Assertions;
 
 public class CartPageStepDefs extends StepDefsSuper{
 
-    LoginPage loginPage;
-    ProductsPage productsPage;
-    CartPage cartPage;
-
-
 
     @And("I click the cart button")
     public void iClickTheCartButton() {

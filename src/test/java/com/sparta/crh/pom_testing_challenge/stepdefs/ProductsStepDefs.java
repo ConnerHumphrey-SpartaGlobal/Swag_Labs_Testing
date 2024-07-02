@@ -13,10 +13,6 @@ import org.junit.jupiter.api.Assertions;
 
 public class ProductsStepDefs extends StepDefsSuper{
 
-    private LoginPage loginPage;
-    private ProductsPage productsPage;
-    private IndividualProductPage individualProductPage;
-
 
     @Given("I have logged in and am on the products page")
     public void iHaveLoggedInAndAmOnTheProductsPage() {

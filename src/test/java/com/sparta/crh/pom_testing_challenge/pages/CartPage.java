@@ -13,6 +13,7 @@ public class CartPage extends BasePage{
     private final By productLink3 = By.id("item_3_title_link");
     private final By productLink4 = By.id("item_4_title_link");
     private final By productLink5 = By.id("item_5_title_link");
+    private final By checkoutButton = By.linkText("CHECKOUT");
 
     public CartPage(WebDriver webDriver) {
         super(webDriver);
@@ -43,5 +44,10 @@ public class CartPage extends BasePage{
                 return "false";
         }
 
+    }
+
+    public WebDriver clickCheckout(){
+        webDriver.findElement(checkoutButton).click();
+        return webDriver;
     }
 }
