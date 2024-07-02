@@ -35,4 +35,4 @@ These details can be obtained from https://www.saucedemo.com/v1/index.html, I hi
 
 ## Whats been tested
 
-So far tests have been created for the logging in process, adding items to cart and validating that the items have been added to the cart
+So far tests have been created for the logging in process, adding items to cart and validating that the items have been added to the cart and the complete user journey of making a purchase from log in to checkout
