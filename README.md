@@ -1,10 +1,10 @@
 # Swag_Labs_Testing
-This repo is purely for selinium/cucumber practise testing the swag labs sauce demo 
-If you wish to fork and use this repo as a base for your own practice you will need to add both the chrome driver and a config.properties file in the test resources folder
+This repo is purely for selinium/cucumber practise testing the swag labs sauce demo.
+If you wish to fork and use this repo as a base for your own practice you will need to add both the chrome driver and a config.properties file in the test resources folder.
 
-You can download the chromedriver from https://getwebdriver.com/, simply extract the contents and move chromedriver.exe into the test resources folder
+You can download the chromedriver from https://getwebdriver.com/, simply extract the contents and move chromedriver.exe into the test resources folder.
 
-As for the config file you will need to create this yourself in the propeties folder with the name "Config.properties" inside this file you will need the following fields
+As for the config file you will need to create this yourself in the propeties folder with the name "Config.properties" inside this file you will need the following fields.
 
 login_URL= "Login page URL"
 
@@ -35,6 +35,6 @@ These details can be obtained from https://www.saucedemo.com/v1/index.html, I hi
 
 ## Whats been tested
 
-So far tests have been created for the logging in process, adding items to cart and validating that the items have been added to the cart and the complete user journey of making a purchase from log in to checkout
+So far tests have been created for the logging in process, adding items to cart and validating that the items have been added to the cart and the complete user journey of making a purchase from log in to checkout with both the standard user and the problem user.
 
-There are 31 total test cases with them all passing 
+There are 63 total test cases with 48 of them passing, the tests that do not pass have defect reports associated with them. Find these in the defect report folder of the repository.
