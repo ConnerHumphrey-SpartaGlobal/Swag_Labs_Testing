@@ -14,11 +14,11 @@ import org.junit.jupiter.api.Assertions;
 public class ProductsStepDefs extends StepDefsSuper{
 
 
-    @Given("I have logged in and am on the products page")
-    public void iHaveLoggedInAndAmOnTheProductsPage() {
+    @Given("I have logged in and am on the products page with User {string}")
+    public void iHaveLoggedInAndAmOnTheProductsPage(String user) {
         webDriver.get(Config.getLoginURL());
         loginPage = new LoginPage(webDriver);
-        loginPage.enterDetails(Config.getStandardUser(), Config.getMasterPassword());
+        loginPage.enterDetails(user, Config.getMasterPassword());
         productsPage = new ProductsPage(loginPage.clickLogin());
 
     }

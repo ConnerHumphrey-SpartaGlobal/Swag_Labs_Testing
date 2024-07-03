@@ -31,3 +31,4 @@ Feature: Login
       |                         |password     |Epic sadface: Username is required                                       |
       |username                 |             |Epic sadface: Password is required                                       |
       |123                      |123          |Epic sadface: Username and password do not match any user in this service|
+      |                         |             |Epic sadface: Username is required                                       |

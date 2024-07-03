@@ -65,4 +65,14 @@ public class CheckoutStepDefs extends StepDefsSuper{
     public void iWillBeToldINeedToEnterAZipCode() {
         Assertions.assertEquals("Error: Postal Code is required", checkoutStepOnePage.getInputErrorMessage());
     }
+
+    @And("Enter my first name {string}, last name {string} and postcode {string}")
+    public void enterMyFirstNameLastNameAndPostcode(String firstName, String lastName, String zipCode) {
+        checkoutStepOnePage.inputDetails(firstName,lastName,zipCode);
+    }
+
+    @Then("I will be presented with an error code stating {string}")
+    public void iWillBePresentedWithAnErrorCodeStating(String errorCode) {
+        Assertions.assertEquals(errorCode, checkoutStepOnePage.getInputErrorMessage());
+    }
 }
